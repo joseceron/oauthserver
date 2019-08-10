@@ -52,9 +52,9 @@ server.get('/api', (req, res) => {
 
 server.get('/api/auth', (req, res) => {
     console.log('api Intent')
-    console.log(JSON.parse(req.query))
+    console.log(req.query)
 
-    input = JSON.parse(req.query);
+    input = req.query;
     client_id = input.client_id
     redirect_uri = input.redirect_uri
     state = input.state
