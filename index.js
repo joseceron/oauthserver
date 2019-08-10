@@ -60,7 +60,7 @@ server.get('/api/auth', (req, res) => {
     state = input.state
     response_type = input.response_type
 
-    console.log('client_id: ', input.client_id)
+    console.log('client_id:  ', input.client_id)
     console.log('redirect_uri: ', input.redirect_uri)
     console.log('state: ', state)
     console.log('response_type: ', input.response_type)
