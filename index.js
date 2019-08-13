@@ -17,7 +17,7 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 
 //token jose
-token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InBob25lIjoiOTQyNDA4NDE5IiwiaWRfdmEiOiIyOTMiLCJuYW1lIjoiSm9zZSBMdWlzIENlcsOzbiIsImJhY2tlbmRVc2VySWQiOiI3MjEifSwiaWF0IjoxNTY1MzAxNjEwfQ.QIATeuTT7_Z6ZVHFDNcXIsoat-4_HMr3X82yOGVN8_Y'
+token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InBob25lIjoiOTQyNDA4NDE5IiwiaWRfdmEiOiIyOTMiLCJuYW1lIjoiSm9zZSBMdWlzIENlcsOzbiBJbWJhY2jDrSIsImZ1bGxfaWQiOiIxNDAxMTIifSwiaWF0IjoxNTY1NzI4MTU4fQ.MuGtox6TadIpRqvyIXNmL6AKB9gwRNBMlZ_2_-YKTHo'
 
 //token maria
 // token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6Ik1hcmlhIENhbGl4dHJvIiwiZW1haWwiOiJtYXJpYS5jYWxpeHRyb0BzZXJhdGljLmNvbSJ9LCJpYXQiOjE1NjUyMTg3ODd9.YBs8YyDuEcZEQEaJtAXFD8eOU8uORTp28Xz0ox-p0YQ'
@@ -139,7 +139,7 @@ function verifyToken(req, res, next) {
 }
 
 server.post('/api/token/create', (req, res) => {
-    //Mock user
+    //Mock user f
     console.log(req.query.phone)
     const user = {
         // phone: 942408419,
